@@ -2,7 +2,8 @@ name: CI
 on: push
 jobs:
   prod-check:
-    runs-on: windows
+    runs-on: ubuntu-latest
+    container: docker://altendky/ccstudio9:latest
     steps:
 
 
