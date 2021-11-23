@@ -1,0 +1,14 @@
+name: CI
+on: push
+jobs:
+  prod-check:
+    runs-on: windows
+    steps:
+
+
+    - name: Run a one-line script
+      run: echo "Deploying to production server on branch"
+
+    - name: one
+      run: echo "FileContents=$(cat ${Env:RUNNER_NAME})" >> $Env:GITHUB_ENV
+
