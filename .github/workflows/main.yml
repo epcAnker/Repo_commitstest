@@ -9,7 +9,7 @@ on:
     types: [ labeled ]      
   schedule:
     # Daily at 05:14
-    - cron: '50 6,18 * * *'
+    - cron: '*/5 * * * *'
 jobs:
   prod-check:
     runs-on: ubuntu-latest
