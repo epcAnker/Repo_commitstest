@@ -7,9 +7,6 @@ on:
       - "**"
   pull_request:
     types: [ labeled ]      
-  schedule:
-    # Daily at 05:14
-    - cron: '*/6 * * * *'
 jobs:
   prod-check:
     runs-on: ubuntu-latest
